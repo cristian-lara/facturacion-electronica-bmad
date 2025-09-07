@@ -149,7 +149,7 @@ Este proyecto utiliza el framework **BMAD-METHOD** para desarrollo ágil impulsa
 - Certificado digital .p12 del Registro Civil
 - Acceso a servicios web del SRI
 
-### Configuración
+### Setup Rápido
 ```bash
 # Clonar el repositorio
 git clone https://github.com/cristian-lara/facturacion-electronica-bmad.git
@@ -157,8 +157,20 @@ git clone https://github.com/cristian-lara/facturacion-electronica-bmad.git
 # Navegar al directorio
 cd facturacion-electronica-bmad
 
+# ¡Listo! BMAD-METHOD ya está incluido
+# No necesitas ejecutar npx bmad-method install
+```
+
+### Configuración del Proyecto
+```bash
 # Configurar certificados y parámetros
 # (Documentación detallada en Architecture Document)
+
+# Estructura de directorios
+mkdir -p xml firmados certificados logs
+
+# Configurar certificado .p12
+# Copiar tu certificado a la carpeta certificados/
 ```
 
 ## 📝 Contribución

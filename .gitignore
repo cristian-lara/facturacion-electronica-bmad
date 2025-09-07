@@ -123,8 +123,8 @@ certificados/
 *.xml
 *.xml.firmado
 
-# BMAD-METHOD specific
-.bmad-core/
-.bmad-infrastructure-devops/
-web-bundles/
-.cursor/
+# BMAD-METHOD specific - INCLUDED for collaboration
+# .bmad-core/
+# .bmad-infrastructure-devops/
+# web-bundles/
+# .cursor/
