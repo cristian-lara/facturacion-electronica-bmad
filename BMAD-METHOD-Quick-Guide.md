@@ -64,21 +64,166 @@ SM → Dev → QA
 2. **Dev** implementa el código
 3. **QA** valida y testea la implementación
 
-## 🛠️ Comandos Básicos
+## 🛠️ Comandos Detallados por Agente
 
-### **Activar Agentes**
+### **💻 DEV (Desarrollador) - James**
+**Propósito:** Implementación de código, debugging, refactoring
+
+#### **Comandos Principales:**
 ```bash
-*analyst      # Activar agente Analyst
-*architect    # Activar agente Architect
-*dev          # Activar agente Dev
-*qa           # Activar agente QA
-*sm           # Activar agente SM
-*pm           # Activar agente PM
-*po           # Activar agente PO
-*ux-expert    # Activar agente UX Expert
+*dev
+develop-story    # Implementar una story completa paso a paso
+explain          # Explicar qué y por qué hizo algo (para aprendizaje)
+review-qa        # Aplicar fixes sugeridos por QA
+run-tests        # Ejecutar linting y tests
+help             # Mostrar lista de comandos
+exit             # Salir del modo Dev
 ```
 
-### **Comandos de Utilidad**
+#### **Cuándo usar DEV:**
+- ✅ Implementar código según user stories
+- ✅ Refactorizar código existente
+- ✅ Debugging y optimización
+- ✅ Crear tests unitarios
+- ✅ Aplicar fixes de QA
+
+#### **Ejemplo de uso:**
+```bash
+*dev
+develop-story
+# Luego especifica: "Implementar Story 1.1: Refactorizar clase Factura.kt"
+```
+
+---
+
+### **🧪 QA (Quality Assurance) - Quinn**
+**Propósito:** Testing, validación, control de calidad
+
+#### **Comandos Principales:**
+```bash
+*qa
+review {story}      # Revisión completa de una story
+gate {story}        # Decisión de quality gate (PASS/CONCERNS/FAIL/WAIVED)
+nfr-assess {story}   # Validar requisitos no funcionales
+risk-profile {story} # Generar matriz de evaluación de riesgos
+test-design {story}  # Crear escenarios de test comprehensivos
+trace {story}        # Mapear requisitos a tests (Given-When-Then)
+help                # Mostrar lista de comandos
+exit                # Salir del modo QA
+```
+
+#### **Cuándo usar QA:**
+- ✅ Crear estrategias de testing
+- ✅ Validar calidad del código
+- ✅ Evaluar riesgos del proyecto
+- ✅ Diseñar casos de prueba
+- ✅ Revisar cumplimiento de requisitos
+
+#### **Ejemplo de uso:**
+```bash
+*qa
+review Story 1.1
+# Revisará la story y dará recomendaciones de calidad
+```
+
+---
+
+### **🏗️ ARCHITECT (Arquitecto) - Winston**
+**Propósito:** Diseño de arquitectura, selección de tecnologías
+
+#### **Comandos Principales:**
+```bash
+*architect
+create-backend-architecture     # Crear arquitectura de backend
+create-brownfield-architecture  # Crear arquitectura para proyecto existente
+create-front-end-architecture   # Crear arquitectura de frontend
+create-full-stack-architecture  # Crear arquitectura full-stack
+document-project               # Documentar proyecto completo
+execute-checklist              # Ejecutar checklist de arquitectura
+research {topic}               # Investigar tema específico
+shard-prd                      # Dividir PRD en componentes
+help                           # Mostrar lista de comandos
+exit                           # Salir del modo Architect
+```
+
+#### **Cuándo usar ARCHITECT:**
+- ✅ Diseñar arquitectura del sistema
+- ✅ Seleccionar tecnologías
+- ✅ Definir patrones de diseño
+- ✅ Planificar infraestructura
+- ✅ Revisar arquitectura existente
+
+#### **Ejemplo de uso:**
+```bash
+*architect
+create-brownfield-architecture
+# Creará arquitectura para refactoring del proyecto existente
+```
+
+---
+
+### **🏃 SM (Scrum Master) - Bob**
+**Propósito:** Gestión de historias, sprints, proceso ágil
+
+#### **Comandos Principales:**
+```bash
+*sm
+draft              # Crear próxima story detallada
+correct-course     # Corregir curso del proyecto
+story-checklist    # Ejecutar checklist de story
+help               # Mostrar lista de comandos
+exit               # Salir del modo SM
+```
+
+#### **Cuándo usar SM:**
+- ✅ Crear user stories detalladas
+- ✅ Planificar sprints
+- ✅ Gestionar backlog
+- ✅ Facilitar retrospectivas
+- ✅ Coordinar proceso ágil
+
+#### **Ejemplo de uso:**
+```bash
+*sm
+draft
+# Creará la próxima story basada en PRD y Architecture
+```
+
+---
+
+### **📊 ANALYST (Analista) - Mary**
+**Propósito:** Análisis de requisitos, investigación de mercado
+
+#### **Comandos Principales:**
+```bash
+*analyst
+brainstorm {topic}                    # Facilitar sesión de brainstorming
+create-competitor-analysis            # Crear análisis de competencia
+create-market-research                # Crear investigación de mercado
+create-project-brief                  # Crear brief del proyecto
+document-existing-project            # Documentar proyecto existente
+research {topic}                      # Investigar tema específico
+help                                  # Mostrar lista de comandos
+exit                                  # Salir del modo Analyst
+```
+
+#### **Cuándo usar ANALYST:**
+- ✅ Analizar requisitos del negocio
+- ✅ Investigar mercado y competencia
+- ✅ Crear briefs de proyecto
+- ✅ Facilitar brainstorming
+- ✅ Documentar proyectos existentes
+
+#### **Ejemplo de uso:**
+```bash
+*analyst
+brainstorm facturacion-electronica
+# Facilitará sesión de brainstorming sobre facturación electrónica
+```
+
+---
+
+### **Comandos de Utilidad Generales**
 ```bash
 *help                    # Mostrar ayuda completa
 *checklist               # Ejecutar checklist de calidad
@@ -86,6 +231,50 @@ SM → Dev → QA
 *doc-out                 # Exportar documento completo
 *exit                    # Salir del modo agente
 ```
+
+## 🎯 Recomendaciones para Empezar
+
+### **Opción 1: Comenzar con Desarrollo (Recomendado)**
+```bash
+*dev
+develop-story
+# Especifica: "Implementar Story 1.1: Refactorizar clase Factura.kt"
+```
+
+### **Opción 2: Crear Tests Primero**
+```bash
+*qa
+test-design Story 1.1
+# Creará escenarios de test para la refactorización
+```
+
+### **Opción 3: Revisar Arquitectura**
+```bash
+*architect
+create-brownfield-architecture
+# Creará arquitectura específica para refactoring
+```
+
+### **Opción 4: Crear Más Stories**
+```bash
+*sm
+draft
+# Creará la próxima story detallada
+```
+
+## 🔄 Flujo Recomendado para Tu Proyecto
+
+1. **SM** → Crear stories detalladas
+2. **DEV** → Implementar código
+3. **QA** → Crear tests y validar
+4. **ARCHITECT** → Revisar arquitectura si es necesario
+
+## 💡 Tips Importantes
+
+- **Sé específico:** Describe exactamente lo que necesitas
+- **Usa el contexto:** Los agentes leen PRD y Architecture automáticamente
+- **Itera:** Puedes volver a cualquier agente para refinar
+- **Sigue el flujo:** Planning → Development → QA
 
 ## 📚 Templates Disponibles
 
