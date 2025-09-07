@@ -81,8 +81,37 @@ fe-bmad/
 
 ## 📚 Documentación
 
+### **Proyecto**
 - **[PRD (Product Requirements Document)](proyecto-facturacion/docs/PRD-Sistema-Facturacion-Electronica.md)** - Requisitos funcionales y no funcionales
 - **[Architecture Document](proyecto-facturacion/docs/Architecture-Sistema-Facturacion-Electronica.md)** - Arquitectura técnica detallada
+- **[User Stories](proyecto-facturacion/docs/User-Stories-Facturacion-Electronica.md)** - Historias de usuario y planificación de sprints
+
+### **BMAD-METHOD Framework**
+- **[BMAD-METHOD Quick Guide](BMAD-METHOD-Quick-Guide.md)** - Guía rápida de uso del framework
+- **[Documentación Oficial](https://github.com/bmad-code-org/BMAD-METHOD)** - Repositorio oficial de BMAD-METHOD
+
+## 🚀 Quick Start con BMAD-METHOD
+
+### **1. Activar un Agente**
+```bash
+# En el chat, escribe el comando del agente:
+*dev        # Para desarrollo
+*analyst    # Para análisis de requisitos
+*architect  # Para diseño de arquitectura
+*qa         # Para testing
+*sm         # Para gestión de historias
+```
+
+### **2. Describir tu Necesidad**
+```bash
+*dev
+Necesito refactorizar la clase FacturaService.kt dividiendo la lógica en componentes más pequeños
+```
+
+### **3. Seguir las Recomendaciones**
+- El agente te proporcionará código, documentación o guías específicas
+- Puedes iterar con el mismo agente o cambiar a otro según necesites
+- Consulta la [BMAD-METHOD Quick Guide](BMAD-METHOD-Quick-Guide.md) para más detalles
 
 ## 🚀 Funcionalidades Core (MVP)
 
